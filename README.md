@@ -6,11 +6,11 @@ La aplicación permite experimentar de manera interactiva cómo las ganancias $K
 ### Opción 1: Docker
 - Construir la imagen:
 ```bashrc
-docker build -t tp-tdc .
+sudo docker build -t tp-tdc .
 ```
 - Ejecutar el contenedor:
 ```bashrc
-docker run -p 8501:8501 tp-tdc
+sudo docker run -p 8501:8501 tp-tdc
 ```
 - Acceder en el navegador:
 [http://localhost:8501](http://localhost:8501)
