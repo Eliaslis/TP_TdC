@@ -32,7 +32,3 @@ streamlit run app.py
 - Abrir en el navegador:
 [http://localhost:8501](http://localhost:8501)
 
-
-
-
-# TP_TdC
