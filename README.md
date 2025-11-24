@@ -12,7 +12,7 @@ docker build -t simulacion-tdc .
 docker run -p 3000:3000 simulacion-tdc
 ```
 
-Luego abrir en el navegador: http://localhost:8080
+Luego abrir en el navegador: http://localhost:3000
 
 ## ▶️ Cómo ejecutar de forma local
 
