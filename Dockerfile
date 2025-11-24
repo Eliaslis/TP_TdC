@@ -1,17 +1,12 @@
-# Imagen base oficial de Python
-FROM python:3.11-slim
+FROM node:18
 
-# Establecer directorio de trabajo
 WORKDIR /app
 
-# Copiar los archivos de la aplicación al contenedor
-COPY . /app
+COPY . .
 
-# Instalar dependencias necesarias
-RUN pip install --no-cache-dir streamlit numpy pandas plotly
+RUN npm init -y
+RUN npm install express ws
 
-# Exponer el puerto de Streamlit
-EXPOSE 8501
+EXPOSE 3000
 
-# Comando por defecto para ejecutar la app
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["node", "app.js"]
