@@ -1,34 +1,41 @@
-# 📘 Simulación interactiva de sistema CI/CD 
-Este proyecto modela un sistema de Integración y Entrega Continua (CI/CD) como un sistema de control de lazo cerrado.
-La aplicación permite experimentar de manera interactiva cómo las ganancias $K_P$, $K_I$ y $K_D$ afectan la estabilidad, el sobreimpulso y el régimen permanente del sistema.
+## 🐳 Cómo ejecutar con Docker
+1. Build de la imagen
 
-## 🛠️ Instalación
-### Opción 1: Docker
-- Construir la imagen:
-```bashrc
-sudo docker build -t tp-tdc .
-```
-- Ejecutar el contenedor:
-```bashrc
-sudo docker run -p 8501:8501 tp-tdc
-```
-- Acceder en el navegador:
-[http://localhost:8501](http://localhost:8501)
+Desde la carpeta del proyecto:
 
-### Opción 2: Local
-- Clonar el repositorio:
 ```bashrc
-git clone https://github.com/Eliaslis/TP_TdC.git
-cd TP_TdC
+docker build -t simulacion-tdc .
 ```
-- Instalar dependencias:
+
+2. Ejecutar el contenedor
 ```bashrc
-pip install streamlit numpy pandas plotly
+docker run -p 8080:8080 simulador-cicd
 ```
-- Ejecutar la aplicación:
+
+Luego abrir en el navegador: http://localhost:8080
+
+## ▶️ Cómo ejecutar de forma local
+
+1. Instalar Node.js
+
+Descargar desde https://nodejs.org
+
+2. Instalar dependencias (si corresponde)
+
+Este proyecto no requiere dependencias externas, pero se recomienda instalar http-server para servir el HTML fácilmente:
+
 ```bashrc
-streamlit run app.py
+npm install -g http-server
 ```
-- Abrir en el navegador:
-[http://localhost:8501](http://localhost:8501)
+
+3. Levantar el servidor local
+
+Ejecutar:
+
+```bashrc
+http-server .
+```
+
+Y abrir http://localhost:8080
+
 
