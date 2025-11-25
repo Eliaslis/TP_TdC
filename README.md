@@ -1,3 +1,7 @@
+Entrar al siguiente sitio web: https://tp-tdc.onrender.com/
+
+Si por algún motivo este no funciona, se puede levantar el proyecto de forma local siguiendo las siguientes instrucciones.
+
 ## 🐳 Cómo ejecutar con Docker
 
 1. Descargar Docker
