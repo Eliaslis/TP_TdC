@@ -18,7 +18,7 @@ docker build -t simulacion-tdc .
 
 3. Ejecutar el contenedor
 ```bashrc
-docker run -p 3000:3000 simulacion-tdc
+docker run simulacion-tdc
 ```
 
 Luego abrir en el navegador: http://localhost:3000
