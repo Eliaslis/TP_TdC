@@ -1,4 +1,6 @@
-const ws = new WebSocket("ws://localhost:3000");
+const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+const ws = new WebSocket(`${protocol}://${window.location.host}`);
+
 
 let chart;
 const logBox = document.getElementById("logBox");
